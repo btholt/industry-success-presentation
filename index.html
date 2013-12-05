@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Dev Mountain</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+      document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+
+    <style type="text/css">
+      .reveal section img {
+        border: none;
+        background: none;
+        box-shadow: none;
+      }
+      .db-logo {
+        max-height:66px !important;
+        margin: 0px 10px !important;
+      }
+      strong {
+        color: green;
+      }
+      img.small {
+        max-height: 100px;
+      }
+    </style>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section>
+          <img src="img/aquilafiera.png">
+          <h1>Brian Holt</h1>
+          <img class="small" src="img/reddit-logo.png">
+        </section>
+
+        <section>
+          <h2>Some Background</h2>
+          <ul>
+            <li>College Dropout</li>
+            <li>Full Stack Intern @ Nu Skin Enterprises</li>
+            <li>Junior Back-End Developer @ KSL</li>
+            <li>Senior Front-End Developer @ Needle</li>
+            <li>Taught Null to Node</li>
+            <li>Director of redditgifts Front-End Development @ reddit</li>
+          </ul>
+        </section>
+
+        <section>
+          <section>
+            <h2>Some Hard Earned Lessons…</h2>
+          </section>
+          <section>
+            <h3>Great code is better than perfect code.</h3>
+          </section>
+          <section>
+            <h3>Be an eternal student.</h3>
+          </section>
+          <section>
+            <h3>Experience is more important than salary.</h3>
+          </section>
+          <section>
+            <h3>Networking is nearly as important in our industry as it is in business.</h3>
+          </section>
+          <section>
+            <h3>Be a good citizen of the Internet. Contribute to open source.</h3>
+            <ol>
+              <li>Use open source frameworks and libraries.</li>
+              <li>Report bugs.</li>
+              <li>Correct and add documentation.</li>
+              <li>Fix the bugs.</li>
+              <li>Open source your own components.</li>
+              <li>Make feature contributions.</li>
+            </ol>
+          </section>
+          <section>
+            <h3>Recruiters are typically not a good vector to gainful employment.</h3>
+          </section>
+          <section>
+            <h3>Breadth is great. Depth is better.</h3>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>Angular.JS</h3>
+          </section>
+          <section>
+            <a href="http://www.redditgifts.com/marketplace/feed/#/"><h3>redditgifts Product Feed</h3></a>
+          </section>
+          <section>
+            <h3>Why Angular.JS (or any MV* Framework)</h3>
+            <ul>
+              <li>Declarative (as opposed to imperative) in nature</li>
+              <li>While a steep learning curve, once learned will ultimately save you time and lines of code.</li>
+              <li>There are some pretty hefty algorithms under the hood of Angular.JS. If that's the case, I want the PhDs at Google writing them, not me.</li>
+            </ul>
+          </section>
+        </section>
+      </div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+          // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+          // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>
